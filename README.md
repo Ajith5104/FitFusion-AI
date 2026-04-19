@@ -1,6 +1,6 @@
-# FitFusion-AI: Virtual Try-On Studio
-
 FitFusion-AI is a next-generation platform that leverages high-fidelity AI to enable users to virtually try on clothing items. By combining garment images with person photos, the application generates realistic, high-resolution previews using the state-of-the-art IDM-VTON model.
+
+## 🌐 Live Demo: https://fit-fusion-ai-kappa.vercel.app
 
 ## 🚀 Features
 
