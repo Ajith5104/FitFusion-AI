@@ -86,7 +86,7 @@ export default function App() {
         date: new Date().toLocaleDateString()
       };
       
-      const updatedFits = [newFit, ...recentFits];
+      const updatedFits = [newFit, ...recentFits].slice(0, 10);
       setRecentFits(updatedFits);
       localStorage.setItem('fitfusion_recent', JSON.stringify(updatedFits));
     } catch (error) {
@@ -245,7 +245,7 @@ export default function App() {
               <div className="section-title">
                 <History size={20} />
                 Recent Results
-                <span className="section-count">{recentFits.length}</span>
+                <span className="section-count">{recentFits.length}/10</span>
               </div>
               <button className="btn-clear" onClick={clearHistory}>
                 <Trash2 size={14} />
