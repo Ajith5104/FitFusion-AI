@@ -92,7 +92,7 @@ export const processTryOn = async (req, res) => {
 // @route   GET /api/tryon/history
 export const getHistory = async (req, res) => {
   try {
-    const history = await TryOn.find().sort({ createdAt: -1 }).limit(10);
+    const history = await TryOn.find().sort({ createdAt: -1 });
     res.status(200).json({
       success: true,
       count: history.length,
